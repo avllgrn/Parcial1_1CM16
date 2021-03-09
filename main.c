@@ -9,8 +9,10 @@ int main(void){
 
     printf("Este programa calcula el area y el perimetro de un rectangulo\n\n");
 
-    base = 2.2;
-    altura = 4.4;
+    printf("Ingresa la base ");
+    scanf("%f",&base);
+    printf("Ingresa la altura ");
+    scanf("%f",&altura);
 
     area = base * altura;
     perimetro = 2*base + 2*altura;
