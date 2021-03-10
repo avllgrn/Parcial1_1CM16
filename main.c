@@ -2,20 +2,16 @@
 
 int main(void){
 
-    char genero;
-    int edad;
-    float estatura;
+    float celsius;
+    float fahrenheit;
 
-    printf("Ingresa tu genero ");
-    scanf("%c",&genero);
-    printf("Ingresa tu edad ");
-    scanf("%d",&edad);
-    printf("Ingresa tu estatura ");
-    scanf("%f",&estatura);
+    printf("Ingresa celsius ");
+    scanf("%f",&celsius);
 
-    printf("\n\nTu genero es: %c\n",genero);
-    printf("Tu edad es: %d\n",edad);
-    printf("Tu estatura es: %f\n",estatura);
+    fahrenheit = 9.0/5.0 * celsius + 32;
+
+    printf("%f C = ",celsius);
+    printf("%f F\n",fahrenheit);
 
     return 0;
 }
