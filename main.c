@@ -1,19 +1,23 @@
 #include <stdio.h>
+#include <math.h>
+
 
 int main(void){
-    //Codifica un programa que convierte de
-    //Fahrenheit a Celsius
 
-    float celsius;
-    float fahrenheit;
+    float a, b, c, x1, x2;
 
-    printf("Ingresa fahrenheit ");
-    scanf("%f",&fahrenheit);
+    printf("Ingresa a ");
+    scanf("%f",&a);
+    printf("Ingresa b ");
+    scanf("%f",&b);
+    printf("Ingresa c ");
+    scanf("%f",&c);
 
-    celsius = (fahrenheit - 32) * 5.0 / 9.0 ;
+    x1 = (-b+sqrt(pow(b,2)-4*a*c)) / (2*a);
+    x2 = (-b-sqrt(pow(b,2)-4*a*c)) / (2*a);
 
-    printf("%f F = ",fahrenheit);
-    printf("%f C\n",celsius);
+    printf("x1 = %f\n",x1);
+    printf("x2 = %f\n",x2);
 
     return 0;
 }
